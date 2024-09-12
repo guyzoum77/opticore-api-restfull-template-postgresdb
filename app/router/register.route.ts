@@ -1,19 +1,13 @@
-import {express} from "opticore-core-module";
+import { express } from "opticore-core-module";
 
 
 /**
- * This is the register where we define all application appRoutes.
+ * This is the register where we define all application appRoutes
  */
 
-export class RegisterRoute {
-    public router: express.application = express();
+export const registerRoutes = () => {
+    const routers: express.Router[] = [
+    ];
 
-    constructor(app: express.application) {
-        this.router = app;
-    }
-
-    routers (): express.Router[] {
-        return [
-        ];
-    }
+    return routers;
 }
