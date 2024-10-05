@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Opticore template",
   "scripts": {
-    "start:prod": "cross-env NODE_ENV=production ts-node src/server.ts",
-    "start:dev": "cross-env NODE_ENV=development nodemon --watch src --delay 1 --exec 'ts-node' src/server.ts",
+    "start:prod": "cross-env NODE_ENV=production ts-node server.ts",
+    "start:dev": "cross-env NODE_ENV=development nodemon --watch src --delay 1 --exec 'ts-node' server.ts",
     "db:migrate": "npx prisma migrate dev --name user-entity --create-only && npx prisma generate",
     "db:push": "npx prisma db push",
     "test": "jest --forceExit --detectOpenHandles",
@@ -25,15 +25,15 @@
   "dependencies": {
     "@types/gradient-string": "^1.1.6",
     "cross-env": "^7.0.3",
-    "opticore-core-module": "^1.0.87",
+    "opticore-core-module": "^1.0.118",
     "reflect-metadata": "^0.2.2"
   },
   "devDependencies": {
     "@naholyr/cross-env": "^1.0.0",
     "@types/node": "^20.12.11",
-    "concurrently": "^8.2.2",
+    "concurrently": "^9.0.1",
     "kill": "^0.0.2",
-    "nodemon": "^3.1.0",
+    "nodemon": "^3.1.7",
     "supertest": "^7.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
