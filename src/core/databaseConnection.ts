@@ -1,4 +1,4 @@
-import { postgresCheckerDatabase, optionalArgumentConnection } from "opticore-core-module";
+import { mySqlCheckerDatabase, optionalArgumentConnection } from "opticore-core-module";
 
 /**
  * mySqlCheckerDatabase is function with an optional params.
@@ -6,4 +6,4 @@ import { postgresCheckerDatabase, optionalArgumentConnection } from "opticore-co
  * So in your .env file, you will have :
  * ARGUMENTS_DATABASE_CONNECTION=sslidentity=client-identity.p12&sslpassword=mypassword&sslcert=rootca.cert
  */
-export const dbConnection = async(): Promise<void> => { await postgresCheckerDatabase(optionalArgumentConnection); }
+export const dbConnection = (): void => { mySqlCheckerDatabase(optionalArgumentConnection); }
