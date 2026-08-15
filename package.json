@@ -33,9 +33,9 @@
     "opticore-feature-component": "^1.0.3",
     "opticore-http-response": "^1.0.10",
     "opticore-loader-translation": "^1.0.8",
-    "opticore-logger": "^1.0.30",
+    "opticore-logger": "^1.0.31",
     "opticore-postgres": "^1.0.0",
-    "opticore-profiler": "1.0.3",
+    "opticore-profiler": "1.0.5",
     "opticore-request-call-event": "^1.0.12",
     "opticore-router": "^1.0.22",
     "opticore-server-logger": "^1.0.13",
@@ -61,9 +61,7 @@
     "typescript-eslint": "^8.34.0"
   },
   "overrides": {
-    "body-parser": "^1.20.6",
     "qs": "^6.15.3",
-    "path-to-regexp": "^0.1.13",
     "jws": "^3.2.3",
     "brace-expansion": "^1.1.18",
     "lodash": "^4.18.1",
