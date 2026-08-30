@@ -5,9 +5,6 @@
   "scripts": {
     "start:prod": "tsx server.ts",
     "start:dev": " tsx server.ts",
-    "stop": "sh -c 'lsof -nP -iTCP:4200 -sTCP:LISTEN'",
-    "db:migrate": "npx prisma migrate dev --name user-entity --create-only && npx prisma generate",
-    "db:push": "npx prisma db push",
     "test": "jest --forceExit --detectOpenHandles",
     "deploy:prod": "npm run build && pm2 start ecosystem.config.js --only prod",
     "deploy:dev": "pm2 start ecosystem.config.js --only dev",
