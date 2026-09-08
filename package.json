@@ -25,7 +25,7 @@
   "dependencies": {
     "@types/gradient-string": "^1.1.6",
     "nunjucks": "^3.2.4",
-    "opticore-cli": "^1.0.5",
+    "opticore-cli": "^1.0.7",
     "opticore-dependency-inject": "^1.0.11",
     "opticore-env-access": "^1.0.26",
     "opticore-express": "^1.0.9",
